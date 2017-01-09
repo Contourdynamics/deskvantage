@@ -7,6 +7,7 @@
    xmlns:h="http://java.sun.com/jsf/html"
    xmlns:p="http://primefaces.org/ui">
    <h:head>
+   <link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/default.css" />
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
       <title>DeskVantage</title>
       <style>
@@ -23,13 +24,12 @@
         		<ui:insert name="body"/>
      		 </div>
 		</p:layoutUnit>
-		<p:layoutUnit position="north"  size="115" style="font-size: small" >
+		<p:layoutUnit id="mega" position="north"  size="115">
 			 <ui:include src="../controls/megamenu.xhtml" /> 
 		</p:layoutUnit>
-		<p:layoutUnit effect="slide" position="west"  header="My Navigation" style="font-size: small" size="200" resizable="false"  collapsible="true">
-			<!-- <ui:include src="../windows/mycontourdynamics.xhtml">
-        				<ui:param name="projectName" value="CMS"/>
-     		</ui:include> -->
+		<p:layoutUnit effect="slide" position="west" style="font-size: small" size="200" resizable="false"  collapsible="true">
+		</p:layoutUnit>
+		<p:layoutUnit effect="slide" position="east"  header="Actions" style="font-size: small" size="200" resizable="false"  collapsible="true">
 		</p:layoutUnit>
 		
 		
