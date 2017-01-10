@@ -74,7 +74,11 @@
 			    <p:menuitem rendered="#{param.i eq 3}" value="Customers" url="http://www.primefaces.org" icon="ui-icon-person" />
 			    <p:menuitem rendered="#{param.i eq 3}" value="Complains" url="http://www.primefaces.org" icon="ui-icon-person" />
 			    <p:menuitem rendered="#{param.i eq 4}" value="Reportings" url="http://www.primefaces.org" icon="ui-icon-person" />
-			    <p:menuitem rendered="#{param.i eq 5}" value="Users" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 5}" outcome="/index" value="Users" icon="ui-icon-person" >
+			    	<f:param name="i" value="5" />
+			    </p:menuitem>
+			    
+			    
 			</p:megaMenu>
 		</p:column>
 	</p:row>
