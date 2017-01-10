@@ -19,19 +19,19 @@
    </h:head>
    <h:body>
 <p:layout fullPage="true" >
-		<p:layoutUnit position="center">
+		<p:layoutUnit position="center" style="border:none !important;">
 			<div class="body">
         		<ui:insert name="body"/>
      		 </div>
 		</p:layoutUnit>
-		<p:layoutUnit id="mega" position="north"  size="115">
+		<p:layoutUnit id="mega" position="north"  size="150" style="border:none !important; background-image: url('#{request.contextPath}/resources/images/header_back.png');">
 			 <ui:include src="../controls/megamenu.xhtml" /> 
 		</p:layoutUnit>
-		<p:layoutUnit effect="slide" position="west" style="font-size: small" size="200" resizable="false"  collapsible="true">
+
+		<p:layoutUnit effect="slide" position="east"  header="Actions" style="font-size: small;background:aliceblue; " size="200" resizable="false"  collapsible="true">
 		</p:layoutUnit>
-		<p:layoutUnit effect="slide" position="east"  header="Actions" style="font-size: small" size="200" resizable="false"  collapsible="true">
+		<p:layoutUnit effect="slide" position="west"  style="background:aliceblue !important; font-size: small;border:none !important;" size="200" resizable="false"  collapsible="true">
 		</p:layoutUnit>
-		
 		
 	</p:layout>
    </h:body>

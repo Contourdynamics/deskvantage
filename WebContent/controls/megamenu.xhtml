@@ -8,122 +8,77 @@
       <h:head><link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/default.css" /></h:head>
 	<h:body>
 	<h:form>
-<p:panelGrid id="mp" columns="3" style="width: 100%; ">
-	<h:graphicImage value="/resources/images/logo.png" alt="Deskvantage"/>
-<p:megaMenu id="megam" orientation="horizontal" align="right" style="border:none;margin:-15px;position:absolute;right: 15px;width: 400px;">
-    <p:submenu label="TV" icon="ui-icon-check">
-        <p:column>
-            <p:submenu label="TV.1">
-                <p:menuitem value="TV.1.1" url="#" />
-                <p:menuitem value="TV.1.2" url="#" />
-            </p:submenu>
-            <p:submenu label="TV.2">
-                <p:menuitem value="TV.2.1" url="#" />
-                <p:menuitem value="TV.2.2" url="#" />
-                <p:menuitem value="TV.2.3" url="#" />
-            </p:submenu>
-        </p:column>
- 
-        <p:column>
-            <p:submenu label="TV.4">
-                <p:menuitem value="TV.4.1" url="#" />
-                <p:menuitem value="TV.4.2" url="#" />
-            </p:submenu>
-            <p:submenu label="TV.5">
-                <p:menuitem value="TV.5.1" url="#" />
-                <p:menuitem value="TV.5.2" url="#" />
-                <p:menuitem value="TV.5.3" url="#" />
-            </p:submenu>
-        </p:column>
- 
-        <p:column>
-            <strong>Image</strong>
-            <p:graphicImage name="/demo/images/nature/nature1.jpg" width="200"/>
-        </p:column>
-    </p:submenu>
- 
-    <p:submenu label="Sports" icon="ui-icon-document">
- 
-        <p:column>
-            <p:submenu label="Sports.1">
-                <p:menuitem value="Sports.1.1" url="#" />
-                <p:menuitem value="Sports.1.2" url="#" />
-            </p:submenu>
-            <p:submenu label="Sports.2">
-                <p:menuitem value="Sports.2.1" url="#" />
-                <p:menuitem value="Sports.2.2" url="#" />
-                <p:menuitem value="Sports.2.3" url="#" />
-            </p:submenu>
-        </p:column>
- 
-        <p:column>
-            <p:submenu label="Sports.4">
-                <p:menuitem value="Sports.4.1" url="#" />
-                <p:menuitem value="Sports.4.2" url="#" />
-            </p:submenu>
-            <p:submenu label="Sports.5">
-                <p:menuitem value="Sports.5.1" url="#" />
-                <p:menuitem value="Sports.5.2" url="#" />
-                <p:menuitem value="Sports.5.3" url="#" />
-            </p:submenu>
-        </p:column>
-        <p:column>
-            <p:submenu label="Sports.7">
-                <p:menuitem value="Sports.7.1" url="#" />
-                <p:menuitem value="Sports.7.2" url="#" />
-            </p:submenu>
-        </p:column>
-    </p:submenu>
- 
-    <p:submenu label="Entertainment" icon="ui-icon-pencil">
-        <p:column>
-            <p:submenu label="Entertainment.1">
-                <p:menuitem value="Entertainment.1.1" url="#" />
-                <p:menuitem value="Entertainment.1.2" url="#" />
-            </p:submenu>
-            <p:submenu label="Entertainment.2">
-                <p:menuitem value="Entertainment.2.1" url="#" />
-                <p:menuitem value="Entertainment.2.2" url="#" />
-                <p:menuitem value="Entertainment.2.3" url="#" />
-            </p:submenu>
-        </p:column>
- 
-        <p:column>
-            <p:submenu label="Entertainment.4" icon="ui-icon-help">
-                <p:menuitem value="Entertainment.4.1" url="#" />
-                <p:menuitem value="Entertainment.4.2" url="#" />
-            </p:submenu>
-            <p:submenu label="Entertainment.5">
-                <p:menuitem value="Entertainment.5.1" url="#" />
-                <p:menuitem value="Entertainment.5.2" url="#" />
-                <p:menuitem value="Entertainment.5.3" url="#" />
-            </p:submenu>
-        </p:column>
-    </p:submenu>
- 
-    <p:submenu label="Tech" icon="ui-icon-contact">
-        <p:column>
-            <p:submenu label="Tech.1">
-                <p:menuitem value="Tech.1.1" url="#" />
-                <p:menuitem value="Tech.1.2" url="#" />
-            </p:submenu>
-            <p:submenu label="Tech.2">
-                <p:menuitem value="Tech.2.1" url="#" />
-                <p:menuitem value="Tech.2.2" url="#" />
-                <p:menuitem value="Tech.2.3" url="#" />
-            </p:submenu>
-        </p:column>
- 
-        <p:column>
-            <p:submenu label="Tech.4">
-                <p:menuitem value="Tech.4.1" url="#" />
-                <p:menuitem value="Tech.4.2" url="#" />
-            </p:submenu>
-        </p:column>
-    </p:submenu>
- 
-    <p:menuitem value="Quit" url="http://www.primefaces.org" icon="ui-icon-close" />
-</p:megaMenu>
+<p:panelGrid id="mp" style="width: 100%; background-image: url('#{request.contextPath}/resources/images/header_back.png');">
+	<p:row style=" background-image: url('#{request.contextPath}/resources/images/header_back.png'); height:85px !important;">
+		<p:column>
+			<h:graphicImage value="/resources/images/logo.png" alt="Deskvantage" style="height:45px; background:none; padding:26px 0px 0px 0px"/>
+		</p:column>
+		<p:column>
+			<p:megaMenu id="megam" orientation="horizontal" align="right" style="border:none;width: 120px;margin: -45px -150px;align-content: right;position: absolute;background: none !important;">
+			    <p:submenu label="Tech" icon="ui-icon-contact">
+			        <p:column>
+			            <p:submenu label="Tech.1">
+			                <p:menuitem value="Tech.1.1" url="#" />
+			                <p:menuitem value="Tech.1.2" url="#" />
+			            </p:submenu>
+			            <p:submenu label="Tech.2">
+			                <p:menuitem value="Tech.2.1" url="#" />
+			                <p:menuitem value="Tech.2.2" url="#" />
+			                <p:menuitem value="Tech.2.3" url="#" />
+			            </p:submenu>
+			        </p:column>
+			        <p:column>
+			            <p:submenu label="Tech.4">
+			                <p:menuitem value="Tech.4.1" url="#" />
+			                <p:menuitem value="Tech.4.2" url="#" />
+			            </p:submenu>
+			        </p:column>
+			    </p:submenu>
+			    <p:menuitem value="Quit" url="http://www.primefaces.org" icon="ui-icon-close" />
+			</p:megaMenu>
+		</p:column>
+	</p:row>
+	<p:row>
+		<p:column>
+			<p:tabMenu activeIndex="#{param.i}">
+			    <p:menuitem value="Project Management" outcome="/index" icon="ui-icon-star">
+			        <f:param name="i" value="0" />
+			    </p:menuitem>
+			    <p:menuitem value="File Management" outcome="/index" icon="ui-icon-search">
+			        <f:param name="i" value="1" />
+			    </p:menuitem>
+			    <p:menuitem value="Accounting" outcome="/index" icon="ui-icon-document">
+			        <f:param name="i" value="2" />
+			    </p:menuitem>
+			    <p:menuitem value="Customers Relationship Management" outcome="/index" icon="ui-icon-wrench">
+			        <f:param name="i" value="3" />
+			    </p:menuitem>
+			    <p:menuitem value="Business Administration" outcome="/index" icon="ui-icon-person">
+			        <f:param name="i" value="4" />
+			    </p:menuitem>
+			    <p:menuitem value="Administration" outcome="/index" icon="ui-icon-person">
+			        <f:param name="i" value="5" />
+			    </p:menuitem>
+			</p:tabMenu>
+		</p:column>
+	</p:row>
+	<p:row>
+		<p:column>
+			<p:megaMenu id="submenu" orientation="horizontal" align="right" style="border:1px; background: #5c9ccc; border-radius:0px !important;">
+			    <p:menuitem rendered="#{param.i eq 0}" value="Projects" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 0}" value="Project Templates" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 0}" value="Dashboard" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 0}" value="Calendar" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 1}" value="Files" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 2}" value="Book Keepings" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 3}" value="Customers" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 3}" value="Complains" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 4}" value="Reportings" url="http://www.primefaces.org" icon="ui-icon-person" />
+			    <p:menuitem rendered="#{param.i eq 5}" value="Users" url="http://www.primefaces.org" icon="ui-icon-person" />
+			</p:megaMenu>
+		</p:column>
+	</p:row>
 </p:panelGrid>
-</h:form></h:body>
+</h:form>
+</h:body>
 </html>
