@@ -56,7 +56,7 @@
 			    <p:menuitem value="Business Administration" outcome="/index" icon="ui-icon-person">
 			        <f:param name="i" value="4" />
 			    </p:menuitem>
-			    <p:menuitem value="Administration" outcome="/index" icon="ui-icon-person">
+			    <p:menuitem value="Resource Management" outcome="/index" icon="ui-icon-person">
 			        <f:param name="i" value="5" />
 			    </p:menuitem>
 			</p:tabMenu>
@@ -74,7 +74,10 @@
 			    <p:menuitem rendered="#{param.i eq 3}" value="Customers" url="http://www.primefaces.org" icon="ui-icon-person" />
 			    <p:menuitem rendered="#{param.i eq 3}" value="Complains" url="http://www.primefaces.org" icon="ui-icon-person" />
 			    <p:menuitem rendered="#{param.i eq 4}" value="Reportings" url="http://www.primefaces.org" icon="ui-icon-person" />
-			    <p:menuitem rendered="#{param.i eq 5}" outcome="/index" value="Users" icon="ui-icon-person" >
+			    <p:menuitem rendered="#{param.i eq 5}" outcome="/modules/customers" value="Customers" icon="ui-icon-person" >
+			    	<f:param name="i" value="5" />
+			    </p:menuitem>
+			    <p:menuitem rendered="#{param.i eq 5}" outcome="/index" value="Consumers" icon="ui-icon-person" >
 			    	<f:param name="i" value="5" />
 			    </p:menuitem>
 			    
