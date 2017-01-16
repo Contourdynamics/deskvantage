@@ -127,6 +127,11 @@ img.right {
 	border-bottom: none;
 	color: #FFFFFF;
 }
+.ui-tabs.ui-tabs-top > .ui-tabs-nav
+{
+	background: none !important;
+	border: none !important;
+}
 
 .title a:hover {
 	border-bottom: 1px dotted #000000;
@@ -256,6 +261,13 @@ img.right {
 .ui-themeswitcher a.ui-selectonemenu-label-container {
     text-decoration: none !important;
 }
+
+.ui-widget-header .ui-state-active .MainTabMenu 
+{
+	border:1px solid #cfd4d8 !important;
+	background:#5c9ccc !important;
+}
+
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active
 {
 	border:1px solid #cfd4d8 !important;
@@ -264,6 +276,17 @@ img.right {
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited
 {
 	color:#4B2424 !important;
+}
+.ui-ribbon 
+{
+	border:none !important;
+}
+#ribbonAction{
+	
+}
+.ribbonAction .ui-widget-header .ui-state-active
+{
+	background: none !important;
 }
 .ui-tabmenu .ui-tabmenu-nav
 {
@@ -295,4 +318,28 @@ img.right {
        overflow:auto !important;
        font-size: 10px !important;
        overflow:visible !important;
+}
+.ui-ribbon .ui-ribbon-group .ui-ribbon-group-content
+{
+	height: 5em !important;	
+}
+.ui-icon.ui-ribbonicon-new {
+       margin-left: -14px;
+        margin-top: -24px;
+        background-image: url("../images/icons/plus.png") !important;
+}
+.ui-icon.ui-ribbonicon-edit {
+       margin-left: -14px;
+        margin-top: -24px;
+        background-image: url("../images/icons/edit.png") !important;
+}
+.ui-icon.ui-ribbonicon-trash {
+       margin-left: -14px;
+        margin-top: -24px;
+        background-image: url("../images/icons/trash.png") !important;
+}
+.ui-icon.ui-ribbonicon-refresh {
+       margin-left: -14px;
+        margin-top: -24px;
+        background-image: url("../images/icons/refresh.png") !important;
 }

@@ -13,11 +13,10 @@
 <h:body>
 	<ui:composition autoupdate="true" template="/Templates/template1.xhtml">
 		<ui:define id="body" name="body" autoupdate="true">
-			<h1>Customers</h1>
-				<ui:include src="/controls/customersMainActions.xhtml" />
-				<br/>
-				<ui:include src="/controls/customerList.xhtml" />
-			<!-- here we will make Main Actions and List Screens -->
+			<ui:include src="/controls/customersMainActions.xhtml" />
+			<br/>
+			<ui:include src="/controls/customerList.xhtml" />
+		<!-- here we will make Main Actions and List Screens -->
 	 	</ui:define>
 	</ui:composition>
 	<!--  Compose Left panel and Right panel as well -->
